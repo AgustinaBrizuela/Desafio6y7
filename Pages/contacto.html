@@ -27,40 +27,59 @@
         </nav>
     </header>
     
-    <div class="content">
+    
+<section class="mb-4">
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contáctanos</h2>
+    <p class="text-center w-responsive mx-auto mb-5">Deje su mensaje nos contactaremos a la brevedad</p>
+    <div class="row">
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Nombre y Apellido</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Email</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Asunto</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                     <div class="col-md-12">
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Mensaje</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
 
-        <h1 class="Contactanos">Contáctanos</h1>
-
-        <div class="contact-wrapper">
-            <div class="contact-form">
-                <h3>Información de contacto</h3>
-                <form action="">
-                    <p class="block">
-                        <label>Nombre y Apellido</label>
-                        <input type="texto" name="fullname" required>
-                    </p>
-                    <p class="block">
-                        <label>Email</label>
-                        <input type="email" name="email" required>
-                    </p>
-                    <p class="block">
-                        <label>Teléfono</label>
-                        <input type="tel" name="teléfono">
-                    </p>
-                                      
-                    <p class="block">
-                       <label>Mensaje</label> 
-                        <textarea name="message" rows="3"></textarea>
-                    </p>
-                    <p class="block">
-                        <button>
-                            Enviar
-                        </button>
-                    </p>
-                </form>
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar</a>
             </div>
-            <div class="contact-info">
-                        
+            <div class="status"></div>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" name="updates" id="updates" value="1">
+            <label for="updates" class="form-check-label">Estoy de acuerdo a recibir novedades y ofertas a mi email</label>
+          </div>
+      
+        
+
+</section>
+<section>
                 <ul>
                     <h3>Sobre Nosotros</h3>
                     <li>Estamos abiertos 365 días del año</li>
@@ -74,6 +93,7 @@
         </div>
 
     </div>
+</section>
     <footer class="homefooter"> 
         <a class="linkhome" href="../index.html">Link Home</a>
         <h4>Bodega Flores S.A. - Lujan de Cuyo - Mendoza - Argentina</h4>
