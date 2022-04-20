@@ -67,7 +67,7 @@ nav
     {
         
         transform: scale(1.5);
-        transition: color, background-color, transform 1.2s ease-in;
+        transition: color, background-color, transform 1s ease-in;
 
     }
     
@@ -212,7 +212,7 @@ div.homeinfo
     {
         background-color: rgb(216, 210, 215);
         transform: scale(1.5);
-        transition: color, background-color, transform 1.2s ease-in;
+        transition: color, background-color, transform 1s ease-in;
     }
 
 /*Animación del footer*/
